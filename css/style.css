@@ -1,0 +1,24 @@
+body {
+    background-color: #EFF0f3 !important;
+}
+
+.container {
+    margin-top: 50px;
+    width: 500px !important;
+
+}
+
+form {
+    background: #2FCC9A;
+    border: 2px solid #228e6c;
+    border-radius: 10px;
+    padding: 20px 20px;
+    padding-left: 20px;
+}
+
+#task{
+    width: 70%;
+    float: left;
+    margin-right: 5%;
+    border: solid #228e6c 2px;
+}
