@@ -12,7 +12,7 @@
 <body>
 <div class="container">
     <h1>Список дел:</h1>
-    <form action="/add/php" method="post">
+    <form action="/add.php" method="post">
             <input type="text" name="task" id="task" placeholder="Нужно сделать..." class="form-control">
             <button type="submit" name="sendTesk" class="btn btn-success">Отправить</button>
     </form>
