@@ -13,9 +13,19 @@
 <div class="container">
     <h1>Список дел:</h1>
     <form action="/add.php" method="post">
-            <input type="text" name="task" id="task" placeholder="Нужно сделать..." class="form-control">
-            <button type="submit" name="sendTesk" class="btn btn-success">Отправить</button>
+        <input type="text" name="task" id="task" placeholder="Нужно сделать..." class="form-control">
+        <button type="submit" name="sendTesk" class="btn btn-success">Отправить</button>
     </form>
+
+    <?php
+    require_once 'configDB.php';
+    echo '<ul>';
+    $query = $pdo->query("SELECT * FROM list");
+    while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+        echo '<li><b>' . $row->task . '</b></li>';
+    }
+    echo '<ul>';
+    ?>
 </div>
 </body>
 </html>
